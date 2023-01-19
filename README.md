@@ -5,10 +5,10 @@
 
 # ESP8266-SSD1306 Connections Pins
 
-D1 > SCL
-D2 > SDA
-3V > VCC
-G > GND
+- D1 > SCL
+- D2 > SDA
+- 3V > VCC
+- G > GND
 
 # Usage
 
