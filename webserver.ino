@@ -88,7 +88,7 @@ void mainPage() {
   Serial.print("Main Page");
   String message = server.arg("q");
   sendMessage(message);
-  server.send(200, "text/html", mesaj);
+  server.send(200, "text/html", message);
   delay(100);
 }
  
@@ -96,7 +96,7 @@ void setup () {
   Serial.begin(115200);
   display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR);
 
-  mesajYaz("Initializing..."); 
+  sendMessage("Initializing..."); 
   WiFi.begin(ssid, password);
  
   while (WiFi.status() != WL_CONNECTED) {
